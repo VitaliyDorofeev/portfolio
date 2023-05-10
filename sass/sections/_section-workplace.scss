@@ -1,0 +1,218 @@
+.section-workplace {
+    padding-top: 70px;
+    padding-bottom: 80px;
+
+     /* Tablet Big */
+     @media (max-width: 1139px) {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    /* Tablet */
+    @media (max-width:899px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.section-workplace--mod {
+    width: 901px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Tablet */
+    @media (max-width:899px) {
+        max-width: 384px;
+    }
+
+    /* Mobile */
+    @media (max-width:767px) {
+        width: 290px;
+    }
+}
+
+.section-workplace__header {
+    margin-bottom: 70px;
+    text-align: center;
+
+     /* Tablet Big */
+     @media (max-width: 1139px) {
+        margin-bottom: 51px;
+    }
+
+     /* Tablet */
+     @media (max-width:899px) {
+        margin-bottom: 41px;
+    }
+
+    h2 {
+        font-size: 54px;
+        line-height: 1.3;
+        background-position: center bottom 8px;
+        background-size: 100% 8px;
+
+         /* Tablet Big */
+        @media (max-width: 1139px) {
+            font-size: 42px;
+        }
+
+         /* Tablet */
+        @media (max-width:899px) {
+            font-size: 32px;
+        }
+    }
+}
+
+.section-workplace__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-workplace__card {
+    position: relative;
+    width: 50%;
+    text-align: right;
+    padding-bottom: 60px;
+
+     /* Tablet */
+     @media (max-width:899px) {
+        text-align: left;
+        width: 340px;
+        padding-bottom: 45px;
+    }
+
+     /* Mobile */
+     @media (max-width:767px) {
+        width: 290px;
+    }
+
+    .section-workplace__wrapper{
+        padding-right: 36px;
+
+        /* Tablet */
+        @media (max-width:899px) {
+            padding-right: 0px;
+            padding-left: 30px;
+        }
+    }
+
+    &:nth-child(even) {
+        margin-left: auto;
+        text-align: left;
+
+        /* Tablet */
+        @media (max-width:899px) {
+            margin-left: unset;
+        }
+
+        .section-workplace__wrapper {
+            padding-left: 36px;
+
+            /* Tablet */
+            @media (max-width:899px) {
+                padding-right: 0;
+                padding-left: 30px;
+            }
+        }
+
+        &::before {
+            right: auto;
+            left: -17px;
+        }
+
+        &::after {
+            right: auto;
+            left: -2px;
+        }
+
+    }
+
+
+// рисуем кружок
+    &::before {
+        content: "";
+        width: 34px;
+        height: 34px;
+        background: #FFFFFF;
+        border: 4px solid #E1EEF4;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: -17px;
+
+
+        /* Tablet */
+        @media (max-width:899px) {
+            left: -17px;
+        }
+
+    }
+
+    // рисуем полоску
+    &::after {
+        content:"";
+        width: 4px;
+        position: absolute;
+        top: 30px;
+        right: -2px;
+        bottom: 0;
+        background: #E1EEF4;
+
+        /* Tablet */
+        @media (max-width:899px) {
+            left: -2px;
+        }
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.section-workplace__title {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    background-position: center bottom 6px;
+    background-size: 100% 6px;
+	background-image: linear-gradient(to top, #FBDC4D, #FBDC4D);
+
+     /* Tablet Big */
+     @media (max-width: 1139px) {
+        font-size: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width:767px) {
+        display: unset;
+        background-size: 100% 4px;
+    }
+
+}
+
+.section-workplace__subtitle {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+
+     /* Tablet Big */
+     @media (max-width: 1139px) {
+        font-size: 14px;
+    }
+}
+
+.section-workplace__time {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+
+     /* Tablet Big */
+     @media (max-width: 1139px) {
+        font-size: 14px;
+    }
+}

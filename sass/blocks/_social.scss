@@ -1,0 +1,25 @@
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+
+    /* Tablet Big */
+    @media (max-width: 1139px) {
+        column-gap: 20px;
+    }
+
+}
+
+.social__item {
+    svg {
+        width: 48px;
+        height: 48px;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+

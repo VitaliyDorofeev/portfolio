@@ -1,0 +1,7 @@
+@mixin gradientLine {
+    display: inline;
+	background-repeat: no-repeat;
+	background-position: center bottom 12px;
+	background-size: 100% 12px;
+	background-image: linear-gradient(to top, #FBDC4D, #FBDC4D);
+}

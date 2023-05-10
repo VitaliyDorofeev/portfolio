@@ -1,0 +1,42 @@
+.mobile {
+    display: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    background-color: #fff;
+
+    /* Tablet */
+    @media (max-width:899px) {
+        display: block;
+    }
+}
+
+.mobile__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile.sticky {
+	position: fixed;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: rgba(255, 255, 255, 0.792);
+
+	animation-duration: .3s;
+	animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
